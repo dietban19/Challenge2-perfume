@@ -1,0 +1,81 @@
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-neutral-100);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.productContent {
+  padding: 1.5rem;
+  max-width: 340px;
+}
+
+.productDetails {
+  margin-bottom: 10px;
+}
+.title {
+  font-family: var(--ff-accent);
+  font-size: 1.5rem;
+  color: var(--clr-neutral-500);
+  margin-bottom: 10px;
+}
+.productPrice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.currentPrice {
+  font-family: var(--ff-accent);
+  color: var(--clr-primary-400);
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
+}
+
+.addToCart {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  gap: 0.75rem;
+  font-weight: var(--fw-bold);
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  color: var(--clr-neutral-100);
+  width: 100%;
+  background-color: var(--clr-primary-400);
+}
+
+img {
+  max-width: 344px;
+}
+
+.category {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 600px) {
+  .productContainer {
+    flex-direction: row;
+    width: 600px;
+  }
+  .picture {
+    background-image: url(./assets/images/perfume.jpg);
+    background-size: cover;
+    width: 50%;
+    /* border-radius: 12px 0 0 12px; */
+  }
+  .picture img {
+    display: none;
+  }
+}
